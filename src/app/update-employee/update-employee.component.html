@@ -1,26 +1,26 @@
 
 <div class="col-md-6 offset-md-3">
     <h3>Update Employee</h3>
-    <form (ngSubmit)="onSubmit()">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
 
       <div class="form-group">
           <label>First Name</label>
-          <input type="text" class="form-control" id="firstname"
+          <input type="text" class="form-control" id="firstname" formControlName="firstname"
             [(ngModel)]="employee.firstname" name="firstname">
       </div>
 
       <div class="form-group">
         <label>Last Name</label>
-        <input type="text" class="form-control" id="lastname"
+        <input type="text" class="form-control" id="lastname" formControlName="lastname"
           [(ngModel)]="employee.lastname" name="lastname">
     </div>
 
     <div class="form-group">
         <label>Email Id</label>
-        <input type="text" class="form-control" id="email"
+        <input type="text" class="form-control" id="email" formControlName="email"
           [(ngModel)]="employee.email" name="email">
     </div>
     
-    <button class="btn btn-success" type="submit">submit</button>
+    <button class="btn btn-success" type="submit" (click)="updateEmp(updateEmp)">submit</button>
     </form>
     </div>

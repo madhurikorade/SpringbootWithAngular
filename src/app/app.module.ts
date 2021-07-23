@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
    
   ],
   providers: [],

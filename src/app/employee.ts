@@ -4,6 +4,7 @@ export class Employee
     firstname!:string;
     lastname!:string;
     email!:string;
+    active!:boolean;
 
     // constructor(id:number,firstname:string,lastname:string,email:string)
     //   {
